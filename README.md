@@ -2,6 +2,9 @@
 
 You will need:
 
+* Add new schemes (iCHEFMonkeytest)
+<img src="http://i68.tinypic.com/whz8yc.png" />
+
 * Xcode >7.2
 * iOS >9.0 simulator
 * A working iOS app project
@@ -23,11 +26,11 @@ You will need:
 
 You can run the tests by viewing the `MonkeyUITest.swift` file and clicking the little play button next to the class declaration or test method declarations:
 
-<img src="http://i66.tinypic.com/2qbcdgi.png" />
+<img src="http://i66.tinypic.com/1htrlz.png" />
 
 Or you can run the tests by opening the Test navigator in the Navigator pane on the left of Xcode and clicking the little play button next to the *MonkeyUITest* target:
 
-<img src="http://i68.tinypic.com/hur12g.png" />
+<img src="http://i63.tinypic.com/121abt0.png" />
 
 There are two tests; one which tests for a set amount of time and one which keeps going until a certain number of gestures has been executed.
 
