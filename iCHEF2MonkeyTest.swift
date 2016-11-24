@@ -11,7 +11,7 @@ import XCTest
 class iCHEF2MonkeyTest: XCTestCase {
     
     let minimumGestureFrequency: UInt32 = 1 // Minimum amount of time to pass between gestures in seconds
-    let duration: Double = 60 * 300 // Execution time limit in seconds
+    let duration: Double = 60 * 120 // Execution time limit in seconds
     let gestureLimit: UInt = 100 // Number of gestures to be executed
     let gestureTypeCount: UInt32 = 14 // Number of types of gesture available
     let app = XCUIApplication()
@@ -39,7 +39,7 @@ class iCHEF2MonkeyTest: XCTestCase {
         super.tearDown()
     }
     
-    func testChaosHandlingForDuration() {
+    func testMonkeyHandlingForDuration() {
         // Create a loop for the given time limit
         let end = NSDate(timeIntervalSinceNow: duration)
         while NSDate().compare(end as Date) == ComparisonResult.orderedAscending {
@@ -48,7 +48,7 @@ class iCHEF2MonkeyTest: XCTestCase {
         }
     }
     
-    func testChaosHandlingUntilGestureLimit() {
+    func testMonkeyHandlingUntilGestureLimit() {
         // Loop for as many times as the gesture limit allows
         for _ in 0..<gestureLimit {
             executeRandomGesture()
