@@ -5,6 +5,7 @@
 # scan --help
 
 # Remove the # in front of the line to enable the option
+# Go to PATH/fastlane to exceute "scan init" first to gen the scanfile
 
 scheme "iCHEFMonkeyTest"
 
