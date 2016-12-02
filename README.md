@@ -69,7 +69,7 @@ func mach_task_self() -> task_t {
        ...
     }
     
-    func getMegabytesUsed() -> Float? {
+func getMegabytesUsed() -> Float? {
        ...
     }
 ```
