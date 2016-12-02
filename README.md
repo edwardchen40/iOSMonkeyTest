@@ -8,6 +8,7 @@ You will need:
 * Xcode >7.2
 * iOS >9.0 simulator
 * A working iOS app project
+* Install Scan and Sanpshot (Fastlane Toolchain)
 
 ## Setup Instructions
 
@@ -61,3 +62,14 @@ let minimumGestureFrequency: UInt32 = 1 // Minimum amount of time to pass betwee
 The minimum frequency of gestures has been set to 1 second by default. Shorter times were tested using `usleep(UInt32)`, but these proved to be unstable.
 
 You can make this integer higher if desired, but things are going to happen pretty slowly if it's increased.
+
+## Provide founction for getting memory usage
+```swift
+func mach_task_self() -> task_t {
+       ...
+    }
+    
+    func getMegabytesUsed() -> Float? {
+       ...
+    }
+```
